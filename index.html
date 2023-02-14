@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGR472 Lab 2: Mapping a Meal</title> <!--Everything up until this point is boilerplate code!-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script> <!--This command allows me to access the Mapbox API!-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' /> <!--This command allows me to use Mapbox's styles for my map.-->
+    <link rel="stylesheet" href="style.css"> <!--This command connects to my own style.css sheet!-->
+</head>
+<body>
+    <div id='header'> <!--This is the container that holds my title!-->
+        <h1>
+            GGR472 Lab 2<br>
+            Mapping a Meal: My Favourite Restaurants in Toronto
+        </h1>
+    </div>
+    <div id='intro'> <!--This container holds a brief introductory paragraph about the map I've created and what its purpose is-->
+        <p>Over the four years I've spent at the University of Toronto, one of the most important parts of my life (besides school, of course) has been food! My friends and I love to go out to eat as a way to spend time together and bond--after all, nothing brings people together quite like sharing a meal! As such, I've managed to accumulate quite a few favourite restaurants, most of which are clustered around campus.
+        <br>
+        <br>But knowing where to get food isn't the only important part of planning a get-together with friends: it's also important to know how to get there! With the TTC's subway network expected to change in the next few decades, I wanted to map out where my favourite restaurents were in relation to not only existing transit routes, but also new ones that will be built in the future!
+        </p>
+    </div>
+    <div id='symbology'>
+        <p>Each restaurant is symbolized as a blue dot on the map.<br>
+            All TTC lines are symbolized as white lines on the map.
+        </p>
+    </div>
+    <div id='map' class = 'map'></div> <!--This is the container that will hold the map.-->
+    <script src="script.js"></script> <!--This sets the source for all of the JavaScript used to create and connect to the map.-->
+    <div id='links'>
+        <h2>Here are some of my favourite restaurants!</h2>
+        <p><strong>Off-campus</strong>
+            <br><strong>Burrito Bandidos:</strong> Probably my favourite burrito places in all of downtown Toronto and the only place that I've ever seen offering "huge" as a burrito size. Not for the faint of heart, but highly recommended for the empty of stomach! Also close to campus at the corner of Bloor and Walmer. Check out their menu <a href="https://burritobandidos.ca/mexican-restaurant-near-you-dishes/">here!</a>
+            <br><strong>Kinton Ramen:</strong> My friends introduced me to this restaurant specializing in ramen when I was in my first year. We always go to the one on Baldwin Street, but they have locations all over the city! Check out their menu <a href="https://www.kintonramen.com/menu/">here!</a>
+            <br><strong>Mother's Dumplings:</strong> My favourite dumpling place, located on Spadina just south of College! Check out their menu <a href="https://mothersdumplings.com/menu">here!</a>
+            <br><strong>Seven Lives Tacos y Mariscos:</strong> This was one of the few restaurants in Toronto that served tacos <em>and</em> got a seal of approval from my friend from California, who was our certified taco expert. He was definitely right--I would call these the best tacos in Kensington! Check out their menu <a href="https://sevenlivesto.ca/pages/menu">here!</a> (Note: This page was mostly empty as of the time of constructing my webpage, but hopefully they will update it soon!)
+            <br><strong>Sizzler Kabab:</strong> I will go to my grave insisting that Sizzler's butter chicken is the ideal comfort food. A good place to go if you're up late, hungry, and want a wide variety of food. Tucked away on the corner of Spadina and Cecil, it's also convenient to campus. Check out their menu <a href="https://sizzler-kabab.com/#menu">here!</a>
+            <br>
+            <br><strong>On-campus</strong>
+            <br><strong>MedSci Cafeteria:</strong> Tucked away in the Medical Sciences building, this cafeteria is almost on par with the Robarts and Sid Smith cafeterias in terms of variety, but it's also less busy. It also has a much less threatening Starbucks line than the other locations on campus.
+            <br><strong>New College Dining Hall:</strong> This place is known as the best dining hall on campus. While I can neither confirm nor deny that claim as I personally wasn't brave enough to venture anywhere else, I can say that their fried rice is the stuff of legend.
+            <br><strong>Robarts Cafeteria:</strong> Whether you're looking for pizza, pasta, sushi, burrito bowls, or BBQ (or if you're willing to brave the mile-long line at Starbucks), Robarts Cafeteria will not disappoint. It's busy during lunch time for good reason!
+            <br><strong>Sid's Cafe:</strong> I always get lunch here when I'm on campus! The burrito bowls are absolutely legendary and it's so convenient when I want to get to GIS class on time but also want to get food first. They also have ramen, pizza, and burgers, so there's something for everyone!
+    </p>
+    </div>
+    <div id='footer'>
+        <p>Map produced 2023 by Meghan Kolin for GGR472H1-S: Developing Web Maps.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#header {
+    text-align: center;
+    color: #3B264A;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#symbology {
+    text-align: center;
+    font-style: italic;
+}
+
+.map { 
+    position: absolute;
+    height: 100%;
+    width: 98.25%;
+    border: solid black;
+}
+
+#links {
+    text-align: center;
+    position: relative;
+    top: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#footer {
+    position: relative;
+    top: 600px;
+    color:#3B264A;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 8pt;
+    position: relative;
+}
